@@ -91,9 +91,9 @@ app.listen(3001, () => {
 });
 
 
-// const token = "6925336596:AAGENTYw7MN57wWy2IsW_Pi5otpzkmWLnSM";
-// let bot = new TelegramBot(token, {polling: true});
-// bot.on('message', msg => {
-//     console.log(msg);
-// })
+const token = "6925336596:AAGENTYw7MN57wWy2IsW_Pi5otpzkmWLnSM";
+let bot = new TelegramBot(token, {polling: true});
+bot.on('message', msg => {
+    bot.sendMessage(chatIDs.aman, "I'm Up!!!")
+})
 
