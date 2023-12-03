@@ -71,6 +71,15 @@ cron.schedule('* * * * * *', () => {
 
     }
 
+    if (time === "6:50:00AM") {
+        let message = `Hey Aman! This Work Tracer, I want you to inform that it's been 06:50AM, which means you have to start working in 10 minutes... All the best.\nThanks you...`
+        SendTGMessage(chatIDs.aman, message)
+
+        message = `Hey Cyril! This Work Tracer, I want you to inform that it's been 06:50AM in India, which means Aman will start working after 10 minutes... I've informed Aman too.\nThank You...`
+        SendTGMessage(chatIDs.cyril, message)
+
+    }
+
     if (time.startsWith("12:00") && time.endsWith("AM")) {
         addToday();
     }
