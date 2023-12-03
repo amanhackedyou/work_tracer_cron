@@ -86,7 +86,7 @@ app.get("/", (req, res) => {
     res.end("Internal Server Error.");
 });
 
-app.listen(3001, () => {
+app.listen(process.env.PORT || 3001, () => {
     console.log("Listening...");
 });
 
