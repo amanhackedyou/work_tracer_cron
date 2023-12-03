@@ -1,0 +1,13 @@
+{
+  "name": "work_tracer_cron_jobs",
+  "version": "1.0.0",
+  "main": "app.js",
+  "author": "Aman Prograammer",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.2",
+    "express": "^4.18.2",
+    "node-cron": "^3.0.3",
+    "node-telegram-bot-api": "^0.64.0"
+  }
+}
